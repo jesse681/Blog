@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MADERE Bâtiment - Expertise et excellence en construction et services d'ingénierie. Plus de 25 ans d'expérience dans tous les corps d'état du bâtiment.">
+    <title>MADERE Bâtiment | Expert en Construction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">MADERE <span>Bâtiment</span></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Accueil</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">À propos</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#management" class="nav__link">Management</a></li>
+                    <li class="nav__item"><a href="#experts" class="nav__link">Experts</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close"></div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle"></div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Expertise et Excellence en Construction</h1>
+                    <p class="hero__description">MADERE Bâtiment vous accompagne avec plus de 25 ans d'expertise dans tous les corps d'état du secteur du bâtiment.</p>
+                    <div class="hero__buttons">
+                        <a href="#services" class="button button--primary">Découvrir nos services</a>
+                        <a href="#contact" class="button button--outline">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Notre Vision</h2>
+                    <span class="section__subtitle">Ce qui nous définit</span>
+                </div>
+                <div class="about__container">
+                    <div class="about__image">
+                        <img src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg" alt="Construction site">
+                    </div>
+                    <div class="about__content">
+                        <h3>MADERE Bâtiment: Expertise & Excellence</h3>
+                        <p>MADERE Bâtiment est une société experte en sous-traitance dans le secteur du bâtiment, tous corps d'état. Elle rassemble des spécialistes ayant plus de 25 ans d'expertise et propose des services d'analyse, de surveillance et de travaux.</p>
+                        <p>Notre passion pour l'innovation technologique et l'excellence en management, associée à une amélioration constante de nos ressources humaines et matérielles, nous confère une compétence unique.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Nos Services</h2>
+                    <span class="section__subtitle">Ce que nous proposons</span>
+                </div>
+                <div class="services__container">
+                    <div class="service__card" data-service="bureau">
+                        <h3>Bureau d'études</h3>
+                        <p>Notre bureau d'études interne est expert dans la conception de plans architecturaux, plans BA, plomberie, électricité et animation 3D.</p>
+                        <ul class="service__list" id="bureau-list"></ul>
+                    </div>
+                    <div class="service__card" data-service="travaux">
+                        <h3>Travaux de construction</h3>
+                        <p>Notre expertise dans le domaine de la construction nous permet d'offrir une panoplie de technologies à nos clients.</p>
+                        <ul class="service__list" id="travaux-list"></ul>
+                    </div>
+                    <div class="service__card" data-service="expertise">
+                        <h3>Autres expertises</h3>
+                        <p>MADERE Bâtiment propose des services d'ingénierie-conseil de qualité, contribuant à la réussite des plans et programmes.</p>
+                        <ul class="service__list" id="expertise-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Contactez-nous</h2>
+                    <span class="section__subtitle">Parlons de votre projet</span>
+                </div>
+                <div class="contact__container">
+                    <div class="contact__content">
+                        <div class="contact__info">
+                            <div class="contact__card">
+                                <h3>Adresse</h3>
+                                <p>123 Avenue de l'Architecture, 75000 Paris, France</p>
+                            </div>
+                            <div class="contact__card">
+                                <h3>Email</h3>
+                                <p>contact@madere-batiment.com</p>
+                            </div>
+                            <div class="contact__card">
+                                <h3>Téléphone</h3>
+                                <p>+33 1 23 45 67 89</p>
+                            </div>
+                        </div>
+                        <form class="contact__form" id="contact-form">
+                            <div class="form__group">
+                                <input type="text" name="name" required placeholder="Votre nom">
+                            </div>
+                            <div class="form__group">
+                                <input type="email" name="email" required placeholder="Votre email">
+                            </div>
+                            <div class="form__group">
+                                <input type="tel" name="phone" placeholder="Votre téléphone">
+                            </div>
+                            <div class="form__group">
+                                <textarea name="message" required placeholder="Votre message"></textarea>
+                            </div>
+                            <button type="submit" class="button button--primary">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__content">
+                    <h3>MADERE Bâtiment</h3>
+                    <p>Expertise et excellence en construction avec plus de 25 ans d'expérience.</p>
+                </div>
+                <div class="footer__content">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h3>Contact</h3>
+                    <p>123 Avenue de l'Architecture<br>75000 Paris, France</p>
+                    <p>+33 1 23 45 67 89</p>
+                    <p>contact@madere-batiment.com</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 MADERE Bâtiment. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
